@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 
 public class GetMethods {
     public Response withToken(String token, String resource, int expSC) {
-        RestAssured.baseURI = "https://gorest.co.in/public/v1";
+        RestAssured.baseURI = "https://gorest.co.in/public/v2";
         return given()
             .auth().oauth2(token)
             .when()
